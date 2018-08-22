@@ -1,10 +1,8 @@
-import "./_preload";
-import { SidebarLayout } from "../components";
-
+import MainFrame from "../frames/main";
 import Readme from "../README.md";
 
 export default () => (
-  <SidebarLayout>
+  <MainFrame>
     <Readme />
-  </SidebarLayout>
+  </MainFrame>
 );
