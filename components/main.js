@@ -1,5 +1,7 @@
 import styled from "react-emotion";
 
 export default styled("main")({
-  paddingLeft: 256
+  paddingTop: 25,
+  paddingLeft: 300,
+  paddingRight: 36
 });
