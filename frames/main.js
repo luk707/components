@@ -22,7 +22,7 @@ const RouterLink = withRouter(({ path, children, router }) => (
       e.preventDefault();
       router.push(
         path,
-        process.env.NODE_ENV === "production" ? `/components/${path}` : path
+        process.env.NODE_ENV === "production" ? `/components${path}` : path
       );
     }}
   >
