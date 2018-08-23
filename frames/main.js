@@ -20,7 +20,10 @@ const RouterLink = withRouter(({ path, children, router }) => (
     active={router.pathname === path}
     onClick={e => {
       e.preventDefault();
-      router.push(path);
+      router.push(
+        path,
+        process.env.NODE_ENV === "production" ? `/components/${path}` : path
+      );
     }}
   >
     {children}
