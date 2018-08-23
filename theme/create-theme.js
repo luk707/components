@@ -1,4 +1,4 @@
-import { hsl } from "polished";
+import { hsl, transparentize } from "polished";
 
 export default ({
   primaryHue = 263,
@@ -17,5 +17,7 @@ export default ({
   colorDullLight: hsl(dullHue, lightSaturation, lightLightness),
   colorWhite: hsl(dullHue, 0.09, 0.99),
   colorOffWhite: hsl(dullHue, 0.09, 0.96),
-  colorDark: hsl(dullHue, 0.09, 0.14)
+  colorDark: hsl(dullHue, 0.09, 0.14),
+  colorGrey: hsl(dullHue, defaultSaturation, lightLightness),
+  colorShadow: transparentize(0.9, hsl(dullHue, 0.09, 0.14))
 });

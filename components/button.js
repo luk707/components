@@ -4,14 +4,15 @@ import { darken, lighten } from "polished";
 export const buttonStyled = Component =>
   styled(Component)(
     ({ theme }) => ({
+      color: theme.colorDark,
       padding: `8px 20px`,
       borderRadius: 3,
-      boxShadow: `0 0 0 ${theme.colorBlack}`,
+      boxShadow: `0 0 0 ${theme.colorShadow}`,
       transition: "ease-out 0.05s",
       textDecoration: "none",
       cursor: "pointer",
       ":hover": {
-        boxShadow: `0 2px 4px ${theme.colorBlack}`
+        boxShadow: `0 2px 4px ${theme.colorShadow}`
       }
     }),
     ({ prominence = "default", theme }) => {
