@@ -6,4 +6,5 @@ if (typeof window !== "undefined") {
 
 injectGlobal`
   body { margin: 0 }
+  pre *, code { font-family: monospace; font-size: 16px; }
 `;

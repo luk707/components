@@ -13,12 +13,14 @@
   "license": "MIT",
   "dependencies": {
     "@mdx-js/mdx": "^0.15.0",
+    "@mdx-js/tag": "^0.15.0",
     "emotion": "^9.2.6",
     "emotion-theming": "^9.2.6",
     "polished": "^2.0.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-emotion": "^9.2.6"
+    "react-emotion": "^9.2.6",
+    "react-syntax-highlighter": "^8.0.1"
   },
   "devDependencies": {
     "@zeit/next-mdx": "^1.1.0",

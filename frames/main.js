@@ -1,4 +1,4 @@
-import { Component } from "react";
+import { Component, Fragment } from "react";
 import {
   SidebarLayout,
   ThemeProvider,
@@ -8,6 +8,11 @@ import {
 } from "../components";
 import { withRouter } from "next/router";
 import "./_preload";
+
+import { MDXProvider } from "@mdx-js/tag";
+
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { rainbow } from "react-syntax-highlighter/styles/hljs";
 
 const RouterLink = withRouter(({ path, children, router }) => (
   <ListLink
@@ -26,18 +31,34 @@ class Frame extends Component {
   render() {
     return (
       <ThemeProvider>
-        <SidebarLayout
-          sidebar={
-            <List>
-              <ListSection>Introduction</ListSection>
-              <RouterLink path="/">Getting started</RouterLink>
-              <ListSection>Components</ListSection>
-              <RouterLink path="/components/button">Button</RouterLink>
-            </List>
-          }
+        <MDXProvider
+          components={{
+            pre: Fragment,
+            code: ({ className, children }) => (
+              <SyntaxHighlighter
+                language={className.replace("languauge-", "")}
+                showLineNumbers
+                lineNumberStyle={{ opacity: "0.4", userSelect: "none" }}
+                style={rainbow}
+              >
+                {children}
+              </SyntaxHighlighter>
+            )
+          }}
         >
-          {this.props.children}
-        </SidebarLayout>
+          <SidebarLayout
+            sidebar={
+              <List>
+                <ListSection>Introduction</ListSection>
+                <RouterLink path="/">Getting started</RouterLink>
+                <ListSection>Components</ListSection>
+                <RouterLink path="/components/button">Button</RouterLink>
+              </List>
+            }
+          >
+            {this.props.children}
+          </SidebarLayout>
+        </MDXProvider>
       </ThemeProvider>
     );
   }
