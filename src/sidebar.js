@@ -6,5 +6,5 @@ export default styled("nav")(({ theme }) => ({
   top: 0,
   bottom: 0,
   left: 0,
-  backgroundColor: theme.colorOffWhite
+  backgroundColor: theme.color_offWhite
 }));
