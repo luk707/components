@@ -7,30 +7,30 @@ export const buttonStyled = Component =>
       color: theme.colorDark,
       padding: `8px 20px`,
       borderRadius: 3,
-      boxShadow: `0 0 0 ${theme.colorShadow}`,
+      boxShadow: `0 0 0 ${theme.color_shadow}`,
       transition: "ease-out 0.05s",
       textDecoration: "none",
       cursor: "pointer",
       ":hover": {
-        boxShadow: `0 2px 4px ${theme.colorShadow}`
+        boxShadow: `0 2px 4px ${theme.color_shadow}`
       }
     }),
     ({ prominence = "default", theme }) => {
       switch (prominence) {
         case "primary":
           return {
-            color: theme.colorWhite,
-            backgroundColor: theme.colorPrimary,
-            border: `1px solid ${darken(0.1, theme.colorPrimary)}`,
+            color: theme.color_white,
+            backgroundColor: theme.color_primary,
+            border: `1px solid ${theme.color_primaryDark}`,
             ":hover": {
-              backgroundColor: lighten(0.02, theme.colorPrimary)
+              backgroundColor: theme.color_primaryLight
             }
           };
         default:
           return {
-            color: theme.colorBlack,
-            backgroundColor: theme.colorWhite,
-            border: `1px solid ${theme.colorGrey}`
+            color: theme.color_black,
+            backgroundColor: theme.color_white,
+            border: `1px solid ${theme.color_grey}`
           };
       }
     }

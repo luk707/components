@@ -1,8 +1,11 @@
-import MainFrame from "../frames/main";
+import base from "../docs/base";
+import Layout from "../docs/layout";
 import Readme from "../README.md";
 
-export default () => (
-  <MainFrame>
+const HomePage = () => (
+  <Layout>
     <Readme />
-  </MainFrame>
+  </Layout>
 );
+
+export default base(HomePage);

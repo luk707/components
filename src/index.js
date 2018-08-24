@@ -6,4 +6,3 @@ export { default as ListSection } from "./list-section";
 export { default as List } from "./list";
 export { default as Main } from "./main";
 export { default as Sidebar } from "./sidebar";
-export { default as ThemeProvider } from "./theme-provider";

@@ -1,8 +1,9 @@
-import MainFrame from "../../frames/main";
-import ButtonExample from "../../examples/button.mdx";
+import base from "../../docs/base";
+import Layout from "../../docs/layout";
+import ButtonExample from "../../docs/examples/button.mdx";
 
-export default () => (
-  <MainFrame>
+export default base(() => (
+  <Layout>
     <ButtonExample />
-  </MainFrame>
-);
+  </Layout>
+));
