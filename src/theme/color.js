@@ -39,7 +39,7 @@ export default ({
   // Monochrome lightness
   whiteLightness = 0.99,
   offWhiteLightness = 0.96,
-  greyLightness = 0.5,
+  greyLightness = 0.8,
   blackLightness = 0.14,
   shadowLightness = 0.14,
 

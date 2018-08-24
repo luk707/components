@@ -4,6 +4,7 @@ import { darken, lighten } from "polished";
 export const buttonStyled = Component =>
   styled(Component)(
     ({ theme }) => ({
+      fontSize: 11,
       color: theme.colorDark,
       padding: `8px 20px`,
       borderRadius: 3,
@@ -30,7 +31,7 @@ export const buttonStyled = Component =>
           return {
             color: theme.color_black,
             backgroundColor: theme.color_white,
-            border: `1px solid ${theme.color_grey}`
+            border: `1px solid ${theme.color_greyVeryLight}`
           };
       }
     }

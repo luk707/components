@@ -5,11 +5,13 @@ import { ThemeProvider } from "emotion-theming";
 import MDXProvider from "./mdx-provider";
 import createTheme from "../src/theme/create-theme";
 
+const theme = createTheme();
+
 export default View =>
   class Base extends Component {
     render() {
       return (
-        <ThemeProvider theme={createTheme()}>
+        <ThemeProvider theme={theme}>
           <MDXProvider>
             <View />
           </MDXProvider>

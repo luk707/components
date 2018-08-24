@@ -1,15 +1,21 @@
 import React from "react";
-import Button from "../button";
-import ThemeProvider from "../theme-provider";
+import { ThemeProvider } from "emotion-theming";
 import renderer from "react-test-renderer";
 
-it("renders correctly", () => {
-  const tree = renderer
-    .create(
-      <ThemeProvider>
-        <Button>Hello World</Button>
-      </ThemeProvider>
-    )
-    .toJSON();
-  expect(tree).toMatchSnapshot();
+import createTheme from "../theme/create-theme";
+import Button from "../button";
+
+const theme = createTheme();
+
+describe("Button", () => {
+  it("renders correctly", () => {
+    const tree = renderer
+      .create(
+        <ThemeProvider theme={theme}>
+          <Button>Hello World</Button>
+        </ThemeProvider>
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
+  });
 });

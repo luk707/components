@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
+exports[`Button renders correctly 1`] = `
 <button
-  className="css-1vx884v"
+  className="css-gc8bc0"
 >
   Hello World
 </button>
