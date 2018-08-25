@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Terminal renders correctly 1`] = `
+<div
+  className="css-5rq8c4"
+>
+  <svg
+    height="12px"
+    version="1.1"
+    viewBox="0 0 52 12"
+    width="52px"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+  >
+    <title>
+      Window Actions
+    </title>
+    <desc>
+      Created with Sketch.
+    </desc>
+    <defs />
+    <g
+      fill="none"
+      fill-rule="evenodd"
+      id="Window-Actions"
+      stroke="none"
+      stroke-width="1"
+    >
+      <g
+        fill-rule="nonzero"
+        id="Minimize"
+        transform="translate(20.000000, 0.000000)"
+      >
+        <circle
+          cx="6"
+          cy="6"
+          fill="#FFBE2F"
+          id="Oval"
+          r="5.75"
+          stroke="#F4AF1A"
+          stroke-width="0.5"
+        />
+        <path
+          d="M9.5,6 L2.5,6"
+          id="Line"
+          stroke="#995700"
+          stroke-linecap="square"
+          stroke-width="1"
+        />
+      </g>
+      <g
+        fill-rule="nonzero"
+        id="Close"
+        stroke-width="0.5"
+      >
+        <circle
+          cx="6"
+          cy="6"
+          fill="#FF6059"
+          id="Oval"
+          r="5.75"
+          stroke="#D23830"
+        />
+        <path
+          d="M3.5,3.5 L8.5,8.5"
+          id="Line"
+          stroke="#4D0000"
+          stroke-linecap="square"
+        />
+        <path
+          d="M8.5,3.5 L3.5,8.5"
+          id="Line-2"
+          stroke="#4D0000"
+          stroke-linecap="square"
+        />
+      </g>
+      <g
+        fill-rule="nonzero"
+        id="Maximize"
+        transform="translate(40.000000, 0.000000)"
+      >
+        <circle
+          cx="6"
+          cy="6"
+          fill="#2ACF42"
+          id="Oval"
+          r="5.75"
+          stroke="#109D1B"
+          stroke-width="0.5"
+        />
+        <path
+          d="M4.5,3 C6.5,3 7.66666667,3 8,3 C8.5,3 9,3.5 9,4 C9,4.33333333 9,5.5 9,7.5 L4.5,3 Z"
+          fill="#036400"
+          id="Path-2"
+        />
+        <path
+          d="M3,4.5 C5,4.5 6.16666667,4.5 6.5,4.5 C7,4.5 7.5,5 7.5,5.5 C7.5,5.83333333 7.5,7 7.5,9 L3,4.5 Z"
+          fill="#036400"
+          id="Path-2"
+          transform="translate(5.250000, 6.750000) rotate(-180.000000) translate(-5.250000, -6.750000) "
+        />
+      </g>
+    </g>
+  </svg>
+  <pre>
+    Hello World
+  </pre>
+</div>
+`;
