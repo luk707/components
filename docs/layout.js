@@ -10,6 +10,7 @@ class Layout extends Component {
           <List>
             <ListSection>Introduction</ListSection>
             <RouterListLink path="/">Getting started</RouterListLink>
+            <RouterListLink path="/theming">Theming</RouterListLink>
             <ListSection>Components</ListSection>
             <RouterListLink path="/components/button">Button</RouterListLink>
           </List>

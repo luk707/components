@@ -1,0 +1,51 @@
+# Theming
+
+`@luk707/components` makes use of the `emotion-theming` library to allow you to customize the look of your application.
+
+The theme can be configured by using the create theme function.
+
+```js
+import createTheme from '@luk707/components/lib/theme/create-theme'
+```
+
+Simply call it as a function and pass the returned object to your theme provider
+
+```js
+import React from 'react'
+import { render } from 'react-dom'
+import { ThemeProvider } from 'emotion-theming'
+import createTheme from '@luk707/components/lib/theme/create-theme'
+import App from './app'
+
+const theme = createTheme()
+
+render(
+  <ThemeProvider theme={theme}>
+    <App />
+  </ThemeProvider>,
+  document.getElementById("app")
+)
+```
+
+*NOTE: this theme provider must wrap the whole application*
+
+To change the theme of your application pass a config object to the createTheme function
+
+```js
+const theme = createTheme({
+  config: {
+    color: {
+      primaryHue: 200,
+      saturation: 0.9
+    }
+  }
+})
+```
+
+See all configuration options below:
+
+*TODO: Complete this table*
+
+| option | type | description |
+| --- | --- | --- |
+| color.primaryHue | number | The hue of the applications primary color |
