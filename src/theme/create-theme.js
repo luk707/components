@@ -15,4 +15,4 @@ export default ({
     ...Object.keys(omit(extensions, extensionOrder)).map(ext =>
       extensions[ext](config[ext])
     )
-  ].reduce((acc, theme) => theme(acc), base(config.base));
+  ].reduce((acc, theme) => ({ ...acc, ...theme(acc) }), base(config.base));
