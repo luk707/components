@@ -1,0 +1,8 @@
+.circleci
+.github
+.next
+docs
+node_modules
+out
+pages
+src

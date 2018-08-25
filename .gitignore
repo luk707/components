@@ -1,4 +1,4 @@
 .next
-build
+lib
 node_modules
 out

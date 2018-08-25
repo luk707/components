@@ -1,28 +1,31 @@
 {
-  "name": "components",
+  "name": "@luk707/components",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "dev": "next",
-    "build": "next build",
-    "export": "rm -rf out/ && npm run build && next export && touch out/.nojekyll",
+    "build": "rm -rf lib/ && NODE_ENV=production babel --out-dir lib --ignore **/__tests__ src",
+    "export": "rm -rf out/ && rm -rf .next/ && next build && next export && touch out/.nojekyll",
     "deploy": "npm run export && gh-pages --dotfiles -d out",
     "test": "jest"
   },
   "author": "Luke Harris <lukeharris01170@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "emotion": "^9.2.6",
-    "emotion-theming": "^9.2.6",
     "lodash": "^4.17.10",
     "polished": "^2.0.2",
+    "react-emotion": "^9.2.6"
+  },
+  "peerDependencies": {
+    "emotion": "^9.2.6",
+    "emotion-theming": "^9.2.6",
     "react": "^16.4.2",
-    "react-dom": "^16.4.2",
-    "react-emotion": "^9.2.6",
-    "react-syntax-highlighter": "^8.0.1"
+    "react-dom": "^16.4.2"
   },
   "devDependencies": {
+    "@babel/cli": "^7.0.0-rc.3",
+    "@babel/core": "^7.0.0-rc.3",
     "@mdx-js/mdx": "^0.15.0",
     "@mdx-js/tag": "^0.15.0",
     "@zeit/next-mdx": "^1.1.0",
@@ -31,6 +34,11 @@
     "gh-pages": "^1.2.0",
     "jest": "^23.5.0",
     "next": "^6.1.1",
-    "react-test-renderer": "^16.4.2"
+    "react-syntax-highlighter": "^8.0.1",
+    "react-test-renderer": "^16.4.2",
+    "emotion": "^9.2.6",
+    "emotion-theming": "^9.2.6",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
   }
 }
