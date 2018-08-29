@@ -27,7 +27,7 @@ export default class MyDocument extends Document {
             }}
           />
           <link
-            href="https://fonts.googleapis.com/css?family=Rubik:400,400i"
+            href="https://fonts.googleapis.com/css?family=Rubik:400,400i,700"
             rel="stylesheet"
           />
         </Head>
