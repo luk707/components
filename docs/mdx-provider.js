@@ -2,14 +2,15 @@ import { Fragment } from "react";
 
 import { MDXProvider } from "@mdx-js/tag";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import syntaxHighlighterStyle from "react-syntax-highlighter/styles/hljs/rainbow";
 
 import { Terminal } from "../src";
+import highlightTheme from "../src/hljs";
 
-export default ({ children }) => (
+export default ({ theme, children }) => (
   <MDXProvider
     components={{
       pre: Fragment,
+
       code: ({ className, children }) =>
         className ? (
           <SyntaxHighlighter
@@ -21,7 +22,7 @@ export default ({ children }) => (
               marginBottom: 1.2,
               display: "block"
             }}
-            style={syntaxHighlighterStyle}
+            style={highlightTheme(theme)}
           >
             {children}
           </SyntaxHighlighter>
