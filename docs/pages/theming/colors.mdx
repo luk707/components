@@ -1,0 +1,75 @@
+# Colors
+
+The color theme extension provides the required colors for most components to work.
+
+Here is an example color configuration:
+
+```js
+const theme = createTheme({
+  config: {
+    color: {
+      primaryHue: 200,
+      saturation: 0.9
+    }
+  }
+})
+```
+
+The following options are available:
+
+```js
+{
+  // Base color hues
+  primaryHue = 263,
+  secondaryHue = 107,
+
+  // Contextual hue
+  successHue = 0,
+  warnHue = 0,
+  infoHue = 0,
+  dangerHue = 0,
+
+  saturation = 0.14,
+  lightness = 0.62,
+
+  // How far do dark and light colors deviate
+  // from the base saturation and lightness
+  saturationDeviance = 0.04,
+  lightnessDeviance = 0.05,
+
+  // Hue and saturation for non perfect whites
+  whiteHue = 23,
+  whiteSaturation = 0.09,
+
+  // Monochrome lightness
+  whiteLightness = 0.99,
+  offWhiteLightness = 0.96,
+  greyLightness = 0.8,
+  blackLightness = 0.14,
+  shadowLightness = 0.14,
+
+  // Define overrides for colors that aren't quite right
+  overrides = {}
+}
+```
+
+| Option | Type | Description | Default |
+| --- | --- | --- | --- |
+| `color.primaryHue` | number | The hue of the applications primary color | `263` |
+| `color.secondaryHue` | number | The hue of the applications secondary color | `107` |
+| `color.successHue` | number | The hue of the applications secondary color | `0` |
+| `color.warnHue` | number | The hue of the applications secondary color | `0` |
+| `color.infoHue` | number | The hue of the applications secondary color | `0` |
+| `color.dangerHue` | number | The hue of the applications secondary color | `0` |
+| `color.saturation` | number | The hue of the applications secondary color | `0.14` |
+| `color.lightness` | number | The hue of the applications secondary color | `0.62` |
+| `color.saturationDeviance` | number | The hue of the applications secondary color | `0.04` |
+| `color.lightnessDeviance` | number | The hue of the applications secondary color | `0.05` |
+| `color.whiteHue` | number | The hue of the applications secondary color | `23` |
+| `color.whiteSaturation` | number | The hue of the applications secondary color | `0.09` |
+| `color.whiteLightness` | number | The hue of the applications secondary color | `0.99` |
+| `color.offWhiteLightness` | number | The hue of the applications secondary color | `0.96` |
+| `color.greyLightness` | number | The hue of the applications secondary color | `0.8` |
+| `color.blackLightness` | number | The hue of the applications secondary color | `0.14` |
+| `color.shadowLightness` | number | The hue of the applications secondary color | `0.14` |
+| `color.overrides` | object | The hue of the applications secondary color | `{}` |
