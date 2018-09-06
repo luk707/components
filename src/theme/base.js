@@ -6,9 +6,10 @@ export default ({
     md: 900,
     lg: 1200,
     xl: 1440
-  }
+  },
   // TODO: Spacing
   // TODO: Border radius
+  borderRadius = 3
 } = {}) => ({
   // breakpoints
   base_breakpoints: Object.keys(breakpoints).sort((a, b) => {
@@ -26,5 +27,6 @@ export default ({
       [`base_breakpoint_${bp}`]: breakpoints[bp]
     }),
     {}
-  )
+  ),
+  base_borderRadius: borderRadius
 });

@@ -4,34 +4,42 @@ import { darken, lighten } from "polished";
 export const buttonStyled = Component =>
   styled(Component)(
     ({ theme }) => ({
-      fontSize: 12,
-      color: theme.colorDark,
-      padding: `8px 20px`,
-      borderRadius: 3,
-      boxShadow: `0 0 0 ${theme.color_shadow}`,
-      transition: "ease-out 0.05s",
-      textDecoration: "none",
-      cursor: "pointer",
+      fontSize: theme.button_fontSize,
+      color: theme.button_color,
+      paddingTop: theme.button_paddingTop,
+      paddingBottom: theme.button_paddingBottom,
+      paddingLeft: theme.button_paddingLeft,
+      paddingRight: theme.button_paddingRight,
+      borderRadius: theme.button_borderRadius,
+      boxShadow: theme.button_shadow,
+      transition: theme.button_transition,
+      textDecoration: theme.button_textDecoration,
+      cursor: theme.button_cursor,
+      borderStyle: theme.button_borderStyle,
+      borderWidth: theme.button_borderWidth,
       ":hover": {
-        boxShadow: `0 2px 4px ${theme.color_shadow}`
+        boxShadow: theme.button_hover_shadow
       }
     }),
     ({ prominence = "default", theme }) => {
       switch (prominence) {
         case "primary":
           return {
-            color: theme.color_white,
-            backgroundColor: theme.color_primary,
-            border: `1px solid ${theme.color_primaryDark}`,
+            color: theme.button_primaryColor,
+            borderColor: theme.button_primaryBorderColor,
+            backgroundColor: theme.button_primaryBackgroundColor,
             ":hover": {
-              backgroundColor: theme.color_primaryLight
+              backgroundColor: theme.button_hoverPrimaryBackgroundColor
             }
           };
         default:
           return {
-            color: theme.color_black,
-            backgroundColor: theme.color_white,
-            border: `1px solid ${theme.color_greyVeryLight}`
+            color: theme.button_defaultColor,
+            borderColor: theme.button_defaultBorderColor,
+            backgroundColor: theme.button_defaultBackgroundColor,
+            ":hover": {
+              backgroundColor: theme.button_hoverDefaultBackgroundColor
+            }
           };
       }
     }

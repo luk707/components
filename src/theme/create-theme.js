@@ -1,11 +1,12 @@
 import omit from "lodash/omit";
 import baseTheme from "./base";
 import color from "./color";
+import button from './button'
 
 export default ({
   base = baseTheme,
-  extensionOrder = ["color"],
-  extensions = { color },
+  extensionOrder = ["color", "button"],
+  extensions = { color, button },
   config = {}
 } = {}) =>
   [

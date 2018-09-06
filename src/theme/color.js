@@ -13,6 +13,8 @@ const clamp = v => {
   return v;
 };
 
+export const getColor = name => theme => theme[`color_${name}`]
+
 export default ({
   // Base color hues
   primaryHue = 263,
