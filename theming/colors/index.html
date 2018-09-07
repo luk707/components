@@ -1,0 +1,98 @@
+<!DOCTYPE html><html><head><meta charSet="utf-8" class="next-head"/><link rel="preload" href="/components/_next/838fc187-ec34-49ba-a1c5-f244c81f6d18/page/theming/colors.js" as="script"/><link rel="preload" href="/components/_next/838fc187-ec34-49ba-a1c5-f244c81f6d18/page/_app.js" as="script"/><link rel="preload" href="/components/_next/838fc187-ec34-49ba-a1c5-f244c81f6d18/page/_error.js" as="script"/><link rel="preload" href="/components/_next/static/commons/main-edad3c6ea0116335c3fe.js" as="script"/><style>*{font-family: 'Rubik', sans-serif;} body{margin:0;}pre *,code{font-family:monospace;font-size:16px;}.css-gu02fn{width:256px;position:fixed;top:0;bottom:0;left:0;background-color:#f6f5f4;}.css-1ycn3f9{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;overflow-y:scroll;height:100%;}.css-13w3dnp{color:#272320;padding-left:14px;margin-bottom:4px;padding-top:15px;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;}.css-1r5tuit{-webkit-text-decoration:none;text-decoration:none;color:#272320;padding-left:14px;margin-top:10px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:25px;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;}.css-12zb0gs{-webkit-text-decoration:none;text-decoration:none;color:#272320;padding-left:10px;margin-top:10px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;height:25px;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;border-left:4px solid #9b91ac;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;}.css-1878jk3{padding-top:25px;padding-bottom:25px;padding-left:300px;padding-right:36px;}.css-1todvj7{overflow-x:auto;background-color:#f6f5f4;}.css-1mid9s7{table-layout:fixed;border-collapse:collapse;}.css-q3icmu{white-space:nowrap;color:#272320;font-weight:400;text-align:left;padding:8px 16px;font-weight:700;}.css-1pbxru0{white-space:nowrap;color:#272320;font-weight:400;text-align:left;padding:8px 16px;}</style><link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,700" rel="stylesheet"/></head><body><div id="__next"><nav class="css-gu02fn"><div class="css-1ycn3f9"><h3 class="css-13w3dnp">Introduction</h3><a href="/" class="css-1r5tuit">Getting started</a><h3 class="css-13w3dnp">Theming</h3><a href="/theming/setup" class="css-1r5tuit">setup</a><a href="/theming/colors" class="css-12zb0gs">colors</a><h3 class="css-13w3dnp">Components</h3><a href="/components/button" class="css-1r5tuit">Button</a></div></nav><main class="css-1878jk3"><div><h1>Colors</h1><p>The color theme extension provides the required colors for most components to work.</p><p>Here is an example color configuration:</p><pre style="display:block;overflow-x:auto;padding:0.5em;background:#272320;color:#d1d9e1"><code style="float:left;padding-right:10px"><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">1
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">2
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">3
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">4
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">5
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">6
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">7
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">8
+</span></code><code><span style="color:#cc99cc">const</span> theme = createTheme({
+  <span style="color:#81a2be">config</span>: {
+    <span style="color:#81a2be">color</span>: {
+      <span style="color:#81a2be">primaryHue</span>: <span style="color:#f99157">200</span>,
+      <span style="color:#81a2be">saturation</span>: <span style="color:#f99157">0.9</span>
+    }
+  }
+})
+</code></pre><p>The following options are available:</p><pre style="display:block;overflow-x:auto;padding:0.5em;background:#272320;color:#d1d9e1"><code style="float:left;padding-right:10px"><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">1
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">2
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">3
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">4
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">5
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">6
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">7
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">8
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">9
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">10
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">11
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">12
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">13
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">14
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">15
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">16
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">17
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">18
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">19
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">20
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">21
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">22
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">23
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">24
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">25
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">26
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">27
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">28
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">29
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">30
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">31
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">32
+</span><span class="react-syntax-highlighter-line-number" style="opacity:0.4;margin-bottom:1.2px;display:block">33
+</span></code><code>{
+  <span style="color:#969896;font-style:italic">// Base color hues</span>
+  primaryHue = <span style="color:#f99157">263</span>,
+  secondaryHue = <span style="color:#f99157">107</span>,
+
+  <span style="color:#969896;font-style:italic">// Contextual hue</span>
+  successHue = <span style="color:#f99157">0</span>,
+  warnHue = <span style="color:#f99157">0</span>,
+  infoHue = <span style="color:#f99157">0</span>,
+  dangerHue = <span style="color:#f99157">0</span>,
+
+  saturation = <span style="color:#f99157">0.14</span>,
+  lightness = <span style="color:#f99157">0.62</span>,
+
+  <span style="color:#969896;font-style:italic">// How far do dark and light colors deviate</span>
+  <span style="color:#969896;font-style:italic">// from the base saturation and lightness</span>
+  saturationDeviance = <span style="color:#f99157">0.04</span>,
+  lightnessDeviance = <span style="color:#f99157">0.05</span>,
+
+  <span style="color:#969896;font-style:italic">// Hue and saturation for non perfect whites</span>
+  whiteHue = <span style="color:#f99157">23</span>,
+  whiteSaturation = <span style="color:#f99157">0.09</span>,
+
+  <span style="color:#969896;font-style:italic">// Monochrome lightness</span>
+  whiteLightness = <span style="color:#f99157">0.99</span>,
+  offWhiteLightness = <span style="color:#f99157">0.96</span>,
+  greyLightness = <span style="color:#f99157">0.8</span>,
+  blackLightness = <span style="color:#f99157">0.14</span>,
+  shadowLightness = <span style="color:#f99157">0.14</span>,
+
+  <span style="color:#969896;font-style:italic">// Define overrides for colors that aren&#x27;t quite right</span>
+  overrides = {}
+}
+</code></pre><div class="css-1todvj7"><table class="css-1mid9s7"><tbody class="css-0"><tr class="css-0"><th class="css-q3icmu">Option</th><th class="css-q3icmu">Type</th><th class="css-q3icmu">Description</th><th class="css-q3icmu">Default</th></tr></tbody><tbody><tr class="css-0"><td class="css-1pbxru0"><code>color.primaryHue</code></td><td class="css-1pbxru0">number</td><td class="css-1pbxru0">The hue of the applications primary color</td><td class="css-1pbxru0"><code>263</code></td></tr><tr class="css-0"><td class="css-1pbxru0"><code>color.secondaryHue</code></td><td class="css-1pbxru0">number</td><td class="css-1pbxru0">The hue of the applications secondary color</td><td class="css-1pbxru0"><code>107</code></td></tr><tr class="css-0"><td class="css-1pbxru0"><code>color.successHue</code></td><td class="css-1pbxru0">number</td><td class="css-1pbxru0">The hue of the applications secondary color</td><td class="css-1pbxru0"><code>0</code></td></tr><tr class="css-0"><td class="css-1pbxru0"><code>color.warnHue</code></td><td class="css-1pbxru0">number</td><td class="css-1pbxru0">The hue of the applications secondary color</td><td class="css-1pbxru0"><code>0</code></td></tr><tr class="css-0"><td class="css-1pbxru0"><code>color.infoHue</code></td><td class="css-1pbxru0">number</td><td class="css-1pbxru0">The hue of the applications secondary color</td><td class="css-1pbxru0"><code>0</code></td></tr><tr class="css-0"><td class="css-1pbxru0"><code>color.dangerHue</code></td><td class="css-1pbxru0">number</td><td class="css-1pbxru0">The hue of the applications secondary color</td><td class="css-1pbxru0"><code>0</code></td></tr><tr class="css-0"><td class="css-1pbxru0"><code>color.saturation</code></td><td class="css-1pbxru0">number</td><td class="css-1pbxru0">The hue of the applications secondary color</td><td class="css-1pbxru0"><code>0.14</code></td></tr><tr class="css-0"><td class="css-1pbxru0"><code>color.lightness</code></td><td class="css-1pbxru0">number</td><td class="css-1pbxru0">The hue of the applications secondary color</td><td class="css-1pbxru0"><code>0.62</code></td></tr><tr class="css-0"><td class="css-1pbxru0"><code>color.saturationDeviance</code></td><td class="css-1pbxru0">number</td><td class="css-1pbxru0">The hue of the applications secondary color</td><td class="css-1pbxru0"><code>0.04</code></td></tr><tr class="css-0"><td class="css-1pbxru0"><code>color.lightnessDeviance</code></td><td class="css-1pbxru0">number</td><td class="css-1pbxru0">The hue of the applications secondary color</td><td class="css-1pbxru0"><code>0.05</code></td></tr><tr class="css-0"><td class="css-1pbxru0"><code>color.whiteHue</code></td><td class="css-1pbxru0">number</td><td class="css-1pbxru0">The hue of the applications secondary color</td><td class="css-1pbxru0"><code>23</code></td></tr><tr class="css-0"><td class="css-1pbxru0"><code>color.whiteSaturation</code></td><td class="css-1pbxru0">number</td><td class="css-1pbxru0">The hue of the applications secondary color</td><td class="css-1pbxru0"><code>0.09</code></td></tr><tr class="css-0"><td class="css-1pbxru0"><code>color.whiteLightness</code></td><td class="css-1pbxru0">number</td><td class="css-1pbxru0">The hue of the applications secondary color</td><td class="css-1pbxru0"><code>0.99</code></td></tr><tr class="css-0"><td class="css-1pbxru0"><code>color.offWhiteLightness</code></td><td class="css-1pbxru0">number</td><td class="css-1pbxru0">The hue of the applications secondary color</td><td class="css-1pbxru0"><code>0.96</code></td></tr><tr class="css-0"><td class="css-1pbxru0"><code>color.greyLightness</code></td><td class="css-1pbxru0">number</td><td class="css-1pbxru0">The hue of the applications secondary color</td><td class="css-1pbxru0"><code>0.8</code></td></tr><tr class="css-0"><td class="css-1pbxru0"><code>color.blackLightness</code></td><td class="css-1pbxru0">number</td><td class="css-1pbxru0">The hue of the applications secondary color</td><td class="css-1pbxru0"><code>0.14</code></td></tr><tr class="css-0"><td class="css-1pbxru0"><code>color.shadowLightness</code></td><td class="css-1pbxru0">number</td><td class="css-1pbxru0">The hue of the applications secondary color</td><td class="css-1pbxru0"><code>0.14</code></td></tr><tr class="css-0"><td class="css-1pbxru0"><code>color.overrides</code></td><td class="css-1pbxru0">object</td><td class="css-1pbxru0">The hue of the applications secondary color</td><td class="css-1pbxru0"><code>{}</code></td></tr></tbody></table></div></div></main></div><div id="__next-error"></div><script>
+          __NEXT_DATA__ = {"props":{"pageProps":{}},"page":"/theming/colors","pathname":"/theming/colors","query":{},"buildId":"838fc187-ec34-49ba-a1c5-f244c81f6d18","assetPrefix":"/components","nextExport":true,"err":null,"ids":["0","153gnx3","gu02fn","1ycn3f9","13w3dnp","1r5tuit","12zb0gs","1878jk3","1todvj7","1mid9s7","q3icmu","1pbxru0"],"chunks":[]}
+          module={}
+          __NEXT_LOADED_PAGES__ = []
+          __NEXT_LOADED_CHUNKS__ = []
+
+          __NEXT_REGISTER_PAGE = function (route, fn) {
+            __NEXT_LOADED_PAGES__.push({ route: route, fn: fn })
+          }
+
+          __NEXT_REGISTER_CHUNK = function (chunkName, fn) {
+            __NEXT_LOADED_CHUNKS__.push({ chunkName: chunkName, fn: fn })
+          }
+
+          false
+        </script><script async="" id="__NEXT_PAGE__/theming/colors" src="/components/_next/838fc187-ec34-49ba-a1c5-f244c81f6d18/page/theming/colors.js"></script><script async="" id="__NEXT_PAGE__/_app" src="/components/_next/838fc187-ec34-49ba-a1c5-f244c81f6d18/page/_app.js"></script><script async="" id="__NEXT_PAGE__/_error" src="/components/_next/838fc187-ec34-49ba-a1c5-f244c81f6d18/page/_error.js"></script><script src="/components/_next/static/commons/main-edad3c6ea0116335c3fe.js" async=""></script></body></html>
