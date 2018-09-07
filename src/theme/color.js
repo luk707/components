@@ -13,7 +13,7 @@ const clamp = v => {
   return v;
 };
 
-export const getColor = name => theme => theme[`color_${name}`]
+export const getColor = name => theme => theme[`color_${name}`];
 
 export default ({
   // Base color hues
@@ -21,18 +21,18 @@ export default ({
   secondaryHue = 107,
 
   // Contextual hue
-  successHue = 0,
-  warnHue = 0,
-  infoHue = 0,
+  successHue = 76,
+  warnHue = 50,
+  infoHue = 180,
   dangerHue = 0,
 
-  saturation = 0.14,
-  lightness = 0.62,
+  saturation = 0.24,
+  lightness = 0.52,
 
   // How far do dark and light colors deviate
   // from the base saturation and lightness
   saturationDeviance = 0.04,
-  lightnessDeviance = 0.05,
+  lightnessDeviance = 0.07,
 
   // Hue and saturation for non perfect whites
   whiteHue = 23,
